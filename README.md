@@ -1,6 +1,10 @@
 # LAB 1
 
 ## Exercise 1: Electrical Circuits
+
+
+
+
 ### Task 1.1: LED Control Circuit
 **Objective:** 
 <br> Observe how resistance affects current flow and LED brightness.
@@ -18,6 +22,20 @@
 | 1000  | 2.5  |2.49 |
 | 4700  | 2.7  |2.31 |
 
+<br>
+
+<div align="left">
+
+| Setup | 
+| :---: |
+| <img src="media/task 1.1 a.jpg" width="300"> | 
+
+</div>
+
+
+
+
+
 ### Task 1.2: Switchable LED Circuit
 **Objective:** 
 <br> Observe the behaviour of the LED with a switch. Also, what happens if the switch is connected in the opposite direction?
@@ -25,6 +43,16 @@
 **Observations:** 
 * The LED glows only when the switch is in ON position and does not glow when the switch is turned off.
 * The switch is non-directional (unlike the LED). If the LED is reversed, it does not light up but the switch works as expected in both the directions.
+
+<div align="left">
+
+| Setup | 
+| :---: |
+| <img src="media/task 1.2 a.jpg" width="300"> | 
+
+</div>
+
+
 
 ### Task 1.3: Dimmable LED Circuit
 **Objective:** 
@@ -44,6 +72,18 @@ Operate the potentiometer and observe the behaviour of the LED.
 | OFF<sub>Threshold</sub>  | 1.9  |1.97 |
 | OFF<sub>Full</sub>       | 0.3  |0.4  |
 
+<br>
+
+<div align="center">
+
+| Setup | Circuit in Action (1) | Circuit in Action (2) |
+| :---: | :---: |:---: |
+| <img src="media/task 1.3 b.jpg" height="600"> | <img src="media/task 1.3 a.gif" height="600"> | <img src="media/task 1.3 c.gif" height="600"> |
+
+</div>
+
+
+
 ## Exercise 2: Transistor Switch Circuit
 ### Task 2.1: Switchable LED Strip
 **Objective:** Use an IRLZ44N NPN MOSFET to control a high-power 12V LED strip using a 5V logic signal.
@@ -61,6 +101,15 @@ Operate the potentiometer and observe the behaviour of the LED.
 3. PWM and Perceived Brightness: By using a PWM Signal Generator instead of a simple toggle switch, the Gate is turned ON and OFF thousands of times per second.
  - Duty Cycle: The ratio of "ON" time to "OFF" time determines the average power delivered to the LEDs. A higher duty cycle results in higher perceived brightness.
  - Frequency: At lower frequencies (e.g., 5 Hz), the eye perceives individual blinks. As the frequency increases beyond the 60 Hz threshold, the flickering becomes invisible to the human eye, resulting in a steady, dimmed light.
+
+<div align="center">
+
+| Setup | Circuit in Action |
+| :---: | :---: |
+| <img src="media/task 2.1 a.jpg" height="500"> | <img src="media/task 2.1 b.gif" height="500"> |
+
+</div>
+
 
 
 ### Task 2.2: Dimmable LED Strip
@@ -89,6 +138,12 @@ Behavour of the LED strip for 4 different settings of Frequency _(f)_ with Duty 
 **Reflections:** 
 * _Duty Cycle Variations (f=90 Hz):_ By keeping the frequency constant and varying the Duty Cycle (D), we control the "on-time" of the LED.
 * _Frequency Varioation (D=0.5):_ We observed the transition from visible blinking to a steady glow, known as Flicker Fusion Threshold.
+
+| Setup | D=15; f=90 | D=100; f=90 | Circuit in Action |
+| :---: | :---: | :---: | :---: |
+| <img src="media/task 2.2 d.jpg" height="800"> | <img src="media/task 2.2 b.jpg" height="800"> | <img src="media/task 2.2 a.jpg" height="800"> | <img src="media/task 2.2 c.gif" height="800"> |
+
+
 
 
 ## Learning Outcomes
