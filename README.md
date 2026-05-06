@@ -22,8 +22,6 @@
 | 1000  | 2.5  |2.49 |
 | 4700  | 2.7  |2.31 |
 
-<br>
-
 <div align="left">
 
 | Setup | 
@@ -71,8 +69,6 @@ Operate the potentiometer and observe the behaviour of the LED.
 | Dimmed                   | 2.29 |2.29 |
 | OFF<sub>Threshold</sub>  | 1.9  |1.97 |
 | OFF<sub>Full</sub>       | 0.3  |0.4  |
-
-<br>
 
 <div align="center">
 
