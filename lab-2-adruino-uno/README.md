@@ -56,8 +56,7 @@ This exercise demonstrates how digital output signals from an Arduino can contro
 
 ### Video
 
-
-
+<video src= "https://github.com/user-attachments/assets/30e43e1f-82c9-4d9e-9ad2-2966eb6e4e25" controls autoplay muted loop style="max-width: 100%;"> </video>
 
 
 
@@ -134,7 +133,13 @@ Interfacing via $I^2C$ drastically lowers the physical layout footprint on the b
 
 ### Video
 
+<div align="left">
 
+| Setup | 
+| :---: |
+| <img src="media/sub-circuit-2-LCD-photo-1.jpg" width="300"> | 
+
+</div>
 
 
 
@@ -199,9 +204,7 @@ This exercise  validated the expansiveness of the $I^2C$ protocol. By utilizing 
 
 ### Video
 
-
-
-
+<video src= "https://github.com/user-attachments/assets/9c5eb069-d962-40c9-8ea6-d6f2f0511203" controls autoplay muted loop style="max-width: 100%;"> </video>
 
 ---
 
@@ -280,9 +283,19 @@ This sub-circuit introduced manual user interaction to our modular system. By ta
 
 ### Video
 
+<div align="center">
+
+| <img src="media/final-project-photo-1.jpg" height="600"> | <img src="media/final-project-photo-2.jpg" height="600"> | 
+| :---: | :---: |
 
 
+</div>
 
+<video src= "https://github.com/user-attachments/assets/502bb606-7d94-4eb6-93e0-5c2cd1a934d1" controls autoplay muted loop style="max-width: 100%;"> </video>
+
+<video src= "https://github.com/user-attachments/assets/f8d44b94-1ee6-478e-ae96-5a5b47757d6b" controls autoplay muted loop style="max-width: 100%;"> </video>
+
+<video src= "https://github.com/user-attachments/assets/b9994a65-a222-4d7a-a64f-eeebd8a0c985" controls autoplay muted loop style="max-width: 100%;"> </video>
 
 ---
 
@@ -443,6 +456,12 @@ This final project showcases a robust integration of hardware components into a 
 ---
 
 ###  Video
+
+<video src= "https://github.com/user-attachments/assets/b6e08d07-1c67-4d2c-bfb2-a1d03c58fc97" controls autoplay muted loop style="max-width: 100%;"> </video>
+
+
+
+
 
 ---
 <br>
