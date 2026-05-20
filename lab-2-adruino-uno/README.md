@@ -441,8 +441,12 @@ void loop() {
 This final project showcases a robust integration of hardware components into a practical embedded system. By transitioning away from basic baseline design paradigms and incorporating custom random-variable math validation logic, the system effectively meets advanced project specifications. The resulting prototype serves as a strong portfolio example of responsive physical computing.
 
 ---
+
+###  Video
+
+---
 <br>
 
 [← Back to Table of Contents](../README.md)
 
-###  Video
+
