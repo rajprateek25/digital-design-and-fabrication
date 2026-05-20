@@ -42,6 +42,10 @@ void loop() {
 * **The Rapid Chirp:** Dropping both delays down to `100ms` turned a lazy, rhythmic beep into a frantic, high-tempo warning chirp.
 * **The Symmetrical Trap:** Embedded programming taught me quickly that human perception relies entirely on state *transitions*. If you remove the `LOW` phase delay, the code loops back to `HIGH` instantly. To your ears, the buzzer just screams continuously because the microcontroller is cycling faster than the physical ceramic element can reset.
 
+### The Circuit says "Cheese"
+
+<video src= "https://github.com/user-attachments/assets/30e43e1f-82c9-4d9e-9ad2-2966eb6e4e25" controls autoplay muted loop style="max-width: 100%;"> </video>
+
 ---
 
 ## 📝 Post 2: Taming the $I^2C$ Liquid Crystal Display (LCD)
@@ -85,6 +89,15 @@ void loop() {}
 
 * **The Blank Screen Panic:** When I first powered it on, the screen lit up but showed generic solid white blocks. A quick turn of the tiny contrast potentiometer on the back of the $I^2C$ backpack instantly brought my text out of the shadows.
 
+### The Circuit says "Cheese"
+
+<div align="center">
+
+| <img src="media/sub-circuit-2-LCD-photo-1.jpg">  | 
+| :---: |
+
+</div>
+
 ---
 
 ## 📝 Post 3: Adding a Real-Time Clock (RTC) to the Shared Bus
@@ -103,6 +116,10 @@ When I ran my trusty I2C scanner utility again, the terminal beautifully listed 
 ### Engineering Insights
 
 * **The Power-Cut Test:** I loaded up a live clock script, let it run, and then abruptly yanked the USB power cord out of the Arduino. I waited a few minutes, plugged it back in, and watched the LCD boot back up. The time didn't reset to midnight; it was perfectly accurate. The coin-cell battery successfully kept the internal crystal oscillator ticking in total darkness.
+
+### The Circuit says "Cheese"
+
+<video src= "https://github.com/user-attachments/assets/9c5eb069-d962-40c9-8ea6-d6f2f0511203" controls autoplay muted loop style="max-width: 100%;"> </video>
 
 ---
 
@@ -124,6 +141,26 @@ This forces the pin safely to a steady `HIGH` state (5V). Pressing the button br
 ### Engineering Insights
 
 * **The "Contact Bounce" Phenomenon:** Mechanical buttons don't make perfect electrical contact instantly. When you press one, the internal metal plates micro-vibrate, tricking a blazing-fast CPU into thinking you pressed the button 5 times in a millisecond. To combat this, I implemented a software-based debounce strategy to ignore these microsecond vibrations and provide a stable, clean state signal.
+
+### The Circuit says "Cheese"
+
+<video src= "https://github.com/user-attachments/assets/502bb606-7d94-4eb6-93e0-5c2cd1a934d1" controls autoplay muted loop style="max-width: 100%;"> </video>
+
+<div align="center">
+
+| <img src="media/final-project-photo-1.jpg">  | 
+| :---: |
+
+</div>
+
+<div align="center">
+
+| <img src="media/final-project-photo-2.jpg">  | 
+| :---: |
+
+</div>
+
+<video src= "https://github.com/user-attachments/assets/f8d44b94-1ee6-478e-ae96-5a5b47757d6b" controls autoplay muted loop style="max-width: 100%;"> </video>
 
 ---
 
@@ -294,6 +331,20 @@ void loop() {
 * **True Randomization:** Computers are notoriously bad at being truly random. If you don't seed them correctly, they generate the exact same puzzle sequences every time they boot up. I fixed this by reading floating, analog white noise from an unconnected analog pin (`analogRead(A0)`) to seed the algorithm, ensuring a fresh mental challenge every morning.
 * **Control UI Scale:** Adding dedicated Up and Down navigation channels completely eliminated menu bottlenecks. Instead of a user awkwardly looping variables forward if they missed their target digit, the dedicated decremental tracking wire allows instant localized adjustments.
 
-### Wrap-Up
+### The Circuit says "Cheese"
+
+<video src= "https://github.com/user-attachments/assets/b9994a65-a222-4d7a-a64f-eeebd8a0c985" controls autoplay muted loop style="max-width: 100%;"> </video>
+
+<video src= "https://github.com/user-attachments/assets/b6e08d07-1c67-4d2c-bfb2-a1d03c58fc97" controls autoplay muted loop style="max-width: 100%;"> </video>
+
+---
+
+## Wrap-Up
 
 What started as a simple, single-component exercise evolved into a highly responsive, multi-protocol embedded system. This project highlighted how elegant code design can bridge hardware limitations—saving I/O pins via shared communication buses, cleaning up mechanical noise through software debouncing, and building a state machine that handles complex user experiences.
+
+---
+
+<br>
+
+[← Back to Table of Contents](../README.md)
