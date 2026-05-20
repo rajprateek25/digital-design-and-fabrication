@@ -157,3 +157,8 @@ Behavour of the LED strip for 4 different settings of Frequency _(f)_ with Duty 
 **Comparison of Dimming Methods:**
  - Resistive Dimming (Analog): Simple to implement but inefficient, as excess energy is dissipated as heat through the resistor. It is also limited by the LED's threshold voltage.
  - PWM Dimming (Digital): Highly efficient because the transistor is either fully ON or fully OFF, minimizing heat loss. It allows for much finer control of perceived brightness across a wide range (2% to 100% duty cycle) without affecting the voltage supplied to the load.
+
+---
+<br>
+
+[← Back to Table of Contents](../README.md)
