@@ -68,11 +68,11 @@ void loop() {
 
 ---
 
-### 📝 Post 2: Making it Interactive with a PIR Sensor
+## 📝 Post 2: Making it Interactive with a PIR Sensor
 
 A static timer is boring. To elevate the project, I brought in an HC-SR501 Passive Infrared (PIR) motion sensor. The goal: The cushion should inflate dynamically when it detects human presence and flatten out when the room is empty.
 
-**The Closed-Loop Code: Edge-Triggered Automation**
+### The Closed-Loop Code: Edge-Triggered Automation**
 
 Rather than spamming the MOSFETs with constant `digitalWrite()` commands, I implemented an edge-triggered state machine. The Arduino only acts at the exact moment a motion transition occurs.
 
@@ -136,14 +136,16 @@ void loop() {
 
 ```
 
-**Engineering Insights**
+### Engineering Insights
 
 * **Eliminating Blocking Delays:** My early experiments relied heavily on `delay()`, which literally freezes the microcontroller blind during execution. By using an edge-detection method (`currentMotionState != lastMotionState`), the loop runs freely and remains hyper-responsive to new sensor inputs without locking up.
 * **The 100ms CPU Breather:** At the bottom of the loop, there is a tiny `delay(100)`. Reading a digital pin thousands of times a second without pause forces the processor to run at 100% capacity continuously. A tenth-of-a-second pause is unnoticeable to a human interacting with the cushion, but it gives the silicon a massive, power-saving break and prevents the Serial Monitor from overflowing.
 
+### The Circuit says "Cheese"
+
 ---
 
-### 🏁 Wrap-Up
+## 🏁 Wrap-Up
 
 Lab 3 demonstrated how low-level microcontroller logic translates into high-current physical action. What started as a messy tangle of silicone tubing and basic timers evolved into a fully closed-loop architectural prototype that dynamically breathes in response to human presence.
 
