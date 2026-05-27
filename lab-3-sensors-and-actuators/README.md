@@ -66,6 +66,15 @@ void loop() {
 
 ### The Circuit says "Cheese"
 
+<div align="center">
+
+| <img src="media/exercise-1-1.jpg">  | 
+| :---: |
+
+</div>
+
+<video src= "https://github.com/user-attachments/assets/bfd1980d-d4f0-4c22-9d02-15f351451455" controls autoplay muted loop style="max-width: 100%;"> </video>
+
 ---
 
 ## 📝 Post 2: Making it Interactive with a PIR Sensor
@@ -142,6 +151,10 @@ void loop() {
 * **The 100ms CPU Breather:** At the bottom of the loop, there is a tiny `delay(100)`. Reading a digital pin thousands of times a second without pause forces the processor to run at 100% capacity continuously. A tenth-of-a-second pause is unnoticeable to a human interacting with the cushion, but it gives the silicon a massive, power-saving break and prevents the Serial Monitor from overflowing.
 
 ### The Circuit says "Cheese"
+
+<video src= "https://github.com/user-attachments/assets/f174891c-22fe-42f2-a246-e06e9d0b989a" controls autoplay muted loop style="max-width: 100%;"> </video>
+
+<video src= "https://github.com/user-attachments/assets/02c74f94-cea7-4d33-b036-2cc6e2099f1b" controls autoplay muted loop style="max-width: 100%;"> </video>
 
 ---
 
