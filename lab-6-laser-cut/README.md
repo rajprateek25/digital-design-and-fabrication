@@ -1,12 +1,19 @@
-# 🛠️ Lab 6: Laser Cut Business Cards — The Quest for the Perfect Substrate
+# 🛠️ Laser Cut Business Cards: The Quest for the Perfect Substrate
 
-💡 Introduction & Motivation
-
-Welcome back to my digital fabrication series! After navigating the squishy, completely unpredictable physics of uninsulated conductive threads in soft circuits , Exercise 6 brought me right back to the comforting world of rigid, solid structures.
+Welcome back to my digital fabrication series! After navigating the squishy, completely unpredictable physics of uninsulated conductive threads in soft circuits in Lab 4, Exercise 6 brought me right back to the comforting world of rigid, solid structures.
 
 The assignment description from the lab manual sounded deceptively simple: use Inkscape to design a standard business card ($89 \times 51\text{ mm}$), utilize both raster (engraving) and vector (cutting) modes, and physically manufacture it using the lab's laser cutter.
 
 My concept was deeply personal: a sleek, poetic networking card for my Instagram handle, **@rajthescribbler**, where I share my raw thoughts and emotions through poetry. The front would read "r @ j the scribbler", while the back side was reserved for a high-density, custom QR code layout intended to link directly to my online profile.
+
+<div align="center">
+<img src="media/inkscape front 1.png" height="600"> 
+</div>
+
+<div align="center">
+<img src="media/inkscape back.png" height="600">
+</div>
+
 
 But as any veteran maker will tell you, the second you move a file from a pristine vector canvas onto a piece of hardware, digital fabrication transforms into a high-stakes comedy of errors. Between software-machine disconnects, material quirks, and a sudden lab ambush, this lab became an absolute masterclass in substrate selection, typography refinement, and desperate machine debugging.
 
