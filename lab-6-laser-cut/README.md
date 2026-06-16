@@ -11,9 +11,8 @@ My concept was deeply personal: a sleek, poetic networking card for my Instagram
 </div>
 
 <div align="center">
-  <img src="media/inkscape back.png" height="600">
+  <img src="media/back initial design.png" height="600">
 </div>
-
 
 But as any veteran maker will tell you, the second you move a file from a pristine vector canvas onto a piece of hardware, digital fabrication transforms into a high-stakes comedy of errors. Between software-machine disconnects, material quirks, and a sudden lab ambush, this lab became an absolute masterclass in substrate selection, typography refinement, and desperate machine debugging.
 
@@ -43,7 +42,7 @@ I configured the job type to Combined mode with a resolution of 600 DPI. I locke
 
 <div align="center">
 
-  |  Acrylic Thickness | Front Design | Printing Settings | 
+  |  Material Thickness | Front Design | Printing Settings | 
   | :---: | :---: | :---: |
   | <img src="media/attempt-1-material-thickness.jpg" height="600"> | <img src="media/attempt-1-front-design.jpg" height="600"> | <img src="media/attempt-1-front-laser-print-settings.jpg" height="600"> |
   
@@ -79,13 +78,33 @@ Furthermore, holding the ruined clear plate up to the light revealed a fundament
 
 Determined to fix the transparency overlay crisis and the text contrast issues, I completely overhauled my assets. I ditched the hollow outline font for a bold, prominent engraving font, and converted the QR code color profile to grayscale to maximize gradient translation. Then, I picked out a premium, dual-tone golden/black acrylic substrate precisely measured at $1.44\text{ mm}$ thick.
 
+<div align="center">
+  <img src="media/inkscape front 2.png" height="600">
+</div>
+
+<div align="center">
+  <img src="media/inkscape back.png" height="600">
+</div>
+
 ### 1. The Strategy
 
 By switching to an opaque material, I expected to separate the front and back visual fields perfectly. I loaded up the design file, keeping the Vector speed at 7% and Power at 100%, but dialed the Frequency down to 25 to protect the delicate metallic-gold layer from scorching.
 
+<div align="center">
+
+  |  Material Thickness | Front Design | 
+  | :---: | :---: |
+  | <img src="media/attempt-2-material-thickness.jpg" height="600"> | <img src="media/attempt-2:3-front-design.jpg" height="600"> |
+  
+</div>
+
 ### 2. The Result
 
 The machine behaved flawlessly this time. The combined raster and vector print executed perfectly, engraving a striking, high-contrast black text over the premium gold top layer and cleanly slicing out a crisp rectangle. It looked like a luxury card worthy of a published poet.
+
+<div align="center">
+  <img src="media/attempt 2 output.jpg" height="600">
+</div>
 
 ### 3. The Conceptual Setback
 
