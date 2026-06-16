@@ -20,7 +20,7 @@ Here is the three-attempt evolutionary saga of how I finally outsmarted the lase
 
 ---
 
-🛠️ Design Architecture & Settings
+### 🛠️ Design Architecture & Settings
 
 *  **The Hardware:** The lab's trusty Epilog Engraver WinX64 Fusion — a dual-source powerhouse capable of high-speed rastering and clean vector slicing.
 
@@ -120,13 +120,17 @@ Third time’s a charm. I completely abandoned plastics and turned to a highly r
 
 I adjusted the Epilog print driver back to Combined mode, setting the autofocus system to a tight material thickness profile of $1.43\text{ mm}$.
 
-* 
-**Raster Profile:** 60% Speed / 100% Power / Standard Dithering (optimized to etch the background rapidly without driving deep thermal cracks into the delicate wood fibers).
+* **Raster Profile:** 60% Speed / 100% Power / Standard Dithering (optimized to etch the background rapidly without driving deep thermal cracks into the delicate wood fibers).
 
+* **Vector Profile:** 7% Speed / 100% Power / 25 Freq (a smooth, steady crawl ensuring crisp edges with absolutely minimal charring).
 
-* 
-**Vector Profile:** 7% Speed / 100% Power / 25 Freq (a smooth, steady crawl ensuring crisp edges with absolutely minimal charring).
+<div align="center">
 
+  |  Front Print Settings | Back Print Settings | 
+  | :---: | :---: |
+  | <img src="media/attempt-3-front-laser-print-settings.jpg" height="600"> | <img src="media/attempt-3-back-settings.jpg" height="600"> |
+  
+</div>
 
 
 ### 2. The Execution
@@ -135,46 +139,59 @@ The front face finished beautifully, with rich, dark, filled lettering standing 
 
 The machine effortlessly rastered the high-density grayscale-optimized QR code matrix on the reverse side. Thanks to the natural charring properties of wood combined with the grayscale conversion, the data blocks turned out incredibly dark and distinct against the light wood backdrop—allowing my smartphone camera to scan it instantly!
 
+<div align="center">
+  <video src= "https://github.com/user-attachments/assets/3d0c092d-5c7a-4b74-803b-98e76abc69b9" controls autoplay muted loop style="max-width: 100%;"> </video> 
+</div>
+
+<div align="center">
+  <video src= "https://github.com/user-attachments/assets/f273f47e-4835-4d2d-a76c-6e0b8cf2d627" controls autoplay muted loop style="max-width: 100%;"> </video> 
+</div>
+
+<div align="center">
+  <video src= "https://github.com/user-attachments/assets/973458c3-f009-41e9-a737-563256270652" controls autoplay muted loop style="max-width: 100%;"> </video> 
+</div>
+
+<div align="center">
+  <video src= "https://github.com/user-attachments/assets/94672754-e354-4e97-bd9e-84fb5290df1b" controls autoplay muted loop style="max-width: 100%;"> </video> 
+</div>
+
 ### 💡 Shower Thought / Post-Project Reflection
 
 Looking closely at my gorgeous final card, I did notice a tiny bit of surface charring around the vector lines. While it gives it a rugged "poet in the woods" vibe, I realized a pro-tip for next time: I could have masked the material with **paper tape** before firing the laser! This would catch all the residual smoke and burn marks, peeling away to leave an ultra-polished, pristine aesthetic. Live and learn!
 
----
+<div align="center">
 
-📊 Engineering Insights & Takeaways
-
-* 
-**Contrast is Key in Physical UI:** Just like developing a software user interface, physical product design demands an acute awareness of contrast ratios. A substrate might engrave beautifully on its front face, but you must always account for how the background color interacts with the underlying material core when designing double-sided pieces.
-
-
-* 
-**Spatial Registration Discipline:** Aligning double-sided laser cuts requires strict physical positioning. Keeping a predictable 1 mm edge margin from the top-left origin allowed me to flip the card manually and achieve flawless alignment without annoying offset ghosting.
-
-
-* 
-**Vector vs. Raster Processing:** If your vector cut fails to execute while rastering works perfectly, it is almost always a driver handshake issue. Always double-check that your cutting strokes are set to a microscopic hairline width ($<0.001\text{ in}$) in Inkscape so the Epilog driver doesn't accidentally group them into a raster operation.
-
-
+  |  Front | Back | 
+  | :---: | :---: |
+  | <img src="media/attempt 3.1 output.jpg" height="600"> | <img src="media/attempt 3.2 output.jpg" height="600"> |
+  
+</div>
 
 ---
 
-🏁 Final Portfolio Status
+## 📊 Engineering Insights & Takeaways
 
-* 
-**Substrate Material:** Finished Plywood Sheet ✅ 
+* **Contrast is Key in Physical UI:** Just like developing a software user interface, physical product design demands an acute awareness of contrast ratios. A substrate might engrave beautifully on its front face, but you must always account for how the background color interacts with the underlying material core when designing double-sided pieces.
+
+* **Spatial Registration Discipline:** Aligning double-sided laser cuts requires strict physical positioning. Keeping a predictable 1 mm edge margin from the top-left origin allowed me to flip the card manually and achieve flawless alignment without annoying offset ghosting.
+
+* **Vector vs. Raster Processing:** If your vector cut fails to execute while rastering works perfectly, it is almost always a driver handshake issue. Always double-check that your cutting strokes are set to a microscopic hairline width ($<0.001\text{ in}$) in Inkscape so the Epilog driver doesn't accidentally group them into a raster operation.
+
+---
+
+## 🏁 Final Portfolio Status
+
+* **Substrate Material:** Finished Plywood Sheet ✅ 
+
+* **Front Design:** Prominent bold font with crisp vector boundary edges ✅ 
+
+* **Back Design:** Fully scannable, high-density grayscale QR code matrix ✅ 
+
+* **Lessons Mastered:** Coordinate homing safety, multi-sided alignment discipline, material science optimization, and the legendary power of paper tape masking.
 
 
-* 
-**Front Design:** Prominent bold font with crisp vector boundary edges ✅ 
+---
 
+<br>
 
-* 
-**Back Design:** Fully scannable, high-density grayscale QR code matrix ✅ 
-
-
-* 
-**Lessons Mastered:** Coordinate homing safety, multi-sided alignment discipline, material science optimization, and the legendary power of paper tape masking.
-
-
-
-← Back to Table of Contents
+[← Back to Table of Contents](../README.md)
