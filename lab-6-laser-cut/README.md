@@ -7,11 +7,11 @@ The assignment description from the lab manual sounded deceptively simple: use I
 My concept was deeply personal: a sleek, poetic networking card for my Instagram handle, **@rajthescribbler**, where I share my raw thoughts and emotions through poetry. The front would read "r @ j the scribbler", while the back side was reserved for a high-density, custom QR code layout intended to link directly to my online profile.
 
 <div align="center">
-<img src="media/inkscape front 1.png" height="600"> 
+  <img src="media/inkscape front 1.png" height="600"> 
 </div>
 
 <div align="center">
-<img src="media/inkscape back.png" height="600">
+  <img src="media/inkscape back.png" height="600">
 </div>
 
 
@@ -23,26 +23,17 @@ Here is the three-attempt evolutionary saga of how I finally outsmarted the lase
 
 🛠️ Design Architecture & Settings
 
-* 
-**The Hardware:** The lab's trusty Epilog Engraver WinX64 Fusion — a dual-source powerhouse capable of high-speed rastering and clean vector slicing.
+*  **The Hardware:** The lab's trusty Epilog Engraver WinX64 Fusion — a dual-source powerhouse capable of high-speed rastering and clean vector slicing.
 
+* **Typography (V1):** An ultra-minimalist font designed to engrave only the outer boundaries/outlines of the alphabets.
 
-* 
-**Typography (V1):** An ultra-minimalist font designed to engrave only the outer boundaries/outlines of the alphabets.
+* **Typography (V2):** A bold, prominent font selected after realizing V1 didn't carry enough visual weight.
 
-
-* 
-**Typography (V2):** A bold, prominent font selected after realizing V1 didn't carry enough visual weight.
-
-
-* 
-**The Backside Asset:** A custom-generated QR code image that I explicitly converted to a high-contrast grayscale profile to maximize laser rastering translation.
-
-
+* **The Backside Asset:** A custom-generated QR code image that I explicitly converted to a high-contrast grayscale profile to maximize laser rastering translation.
 
 ---
 
-🛑 Attempt 1: The Outlined Ghost, The Spooler Freeze, and The Lab Hijacking (Failure #1)
+## 🛑 Attempt 1: The Outlined Ghost, The Spooler Freeze, and The Lab Hijacking (Failure #1)
 
 For my first foray into the lab, I chose a clean, transparent acrylic plate. I locked down its thickness at exactly $2.95\text{ mm}$ using a digital vernier caliper and pulled up the Epilog driver menu.
 
@@ -50,9 +41,21 @@ For my first foray into the lab, I chose a clean, transparent acrylic plate. I l
 
 I configured the job type to Combined mode with a resolution of 600 DPI. I locked in a heavy-duty Raster Setting of 100% Speed / 100% Power, and a Vector Setting of 7% Speed / 100% Power / 50 Freq to guarantee a clean cut through the plastic.
 
+<div align="center">
+
+  |  Acrylic Thickness | Front Design | Printing Settings | 
+  | :---: | :---: | :---: |
+  | <img src="media/attempt-1-material-thickness.jpg" height="600"> | <img src="media/attempt-1-front-design.jpg" height="600"> | <img src="media/attempt-1-front-laser-print-settings.jpg" height="600"> |
+  
+</div>
+
 ### 2. The Physical Plot Twist
 
 The laser head fired up beautifully, dancing across the substrate to etch out my poetry handle via rastering. However, because of my initial font choice (V1), it only engraved faint, hollow text outlines. Worse, when it transitioned to the outer cutting path, nothing happened. The laser head sat completely stationary. The vector commands simply refused to execute. I frantically resent the vector job multiple times, but the subsystem was completely unresponsive, trapped in a communication freeze.
+
+<div align="center">
+  <video src= "https://github.com/user-attachments/assets/9a059c66-7202-451f-ae9d-fb0ae23bea59" controls autoplay muted loop style="max-width: 100%;"> </video> 
+</div>
 
 ### 3. Enter the Interrupters & Spatial Drift
 
@@ -66,9 +69,13 @@ When I finally got back on the terminal, reset my material focus thickness manua
 
 Furthermore, holding the ruined clear plate up to the light revealed a fundamental product design flaw: transparent acrylic is an absolute nightmare for double-sided business cards. Looking at the front face made the high-density QR code engraving on the back side a completely illegible, overlapping visual mess.
 
+<div align="center">
+  <img src="media/attempt 1 output.jpg" height="600">
+</div>
+
 ---
 
-🛑 Attempt 2: The Solid Upgrade & The Matte Black Visual Blackout (Failure #2)
+## 🛑 Attempt 2: The Solid Upgrade & The Matte Black Visual Blackout (Failure #2)
 
 Determined to fix the transparency overlay crisis and the text contrast issues, I completely overhauled my assets. I ditched the hollow outline font for a bold, prominent engraving font, and converted the QR code color profile to grayscale to maximize gradient translation. Then, I picked out a premium, dual-tone golden/black acrylic substrate precisely measured at $1.44\text{ mm}$ thick.
 
@@ -86,7 +93,7 @@ The moment I pulled the card out of the honeycomb bed and flipped it over, reali
 
 ---
 
-🚀 Attempt 3: The Wooden Masterpiece (The Grand Success!)
+## 🚀 Attempt 3: The Wooden Masterpiece (The Grand Success!)
 
 Third time’s a charm. I completely abandoned plastics and turned to a highly reliable, beautifully classic finished plywood board. Wood offers a fantastic organic density that naturally turns a rich, carbonized dark brown when burnt, providing a built-in high-contrast profile perfect for text and data codes.
 
