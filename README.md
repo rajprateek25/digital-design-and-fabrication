@@ -8,9 +8,9 @@ Welcome to the table of contents for the lab exercises performed as part of the 
 | Lab 2 | **[Adruino Uno](./lab-2-adruino-uno/README.md)**  | Covers the integration of an Arduino Uno with an I2C LCD screen, a Real-Time Clock (RTC) module, a buzzer, and push buttons using internal pull-up resistors. Focuses on I2C communication protocols and modular circuit building to design and program a functional, standalone digital alarm clock. | Khushil Dave
 | Lab 3 | **[Sensors & Actuators](./lab-3-sensors-and-actuators/README.md)**  | Covers the integration of an Arduino Uno with high-current DC actuators (dual air pumps and an electronic valve) using IRF520 MOSFET driver modules. Focuses on balancing power domains with a common ground , understanding pneumatic switching behavior , and integrating real-time sensor inputs to design an interactive, responsive soft-robotics system. | Khushil Dave
 | Lab 4 | **[E-Textiles](./lab-4-e-textiles/README.md)**  | Covers hand-fabricating an 8-LED wearable matrix using uninsulated conductive thread. Highlights a complete structural layout redesign to solve geometry-induced short circuits, utilizing high-visibility tracing to conquer the physical constraints of flexible electronics. | -
-| Lab 5 | **[CNC Milling](./lab-5-cnc-milling/README.md)**  | Portfolio under construction. | -
+| Lab 5 | **[CNC Milling](./lab-5-cnc-milling/README.md)**  | Page under construction. | -
 | Lab 6 | **[Laser Cutting](./lab-6-laser-cut/README.md)**  | Covers the evolutionary journey of outsmarting the lab's Epilog laser cutter cycling througn transparent acrylic, dual-tone plastic, and plywood to create the perfect scannable business card. | -
-
+| Lab 7 | **[Onshape](./lab-7-onshape/README.md)**  | Page under construction.  | -
 
 
 
