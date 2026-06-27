@@ -25,7 +25,7 @@ Eventually, a truce was brokered between my brain and the software. After finall
 Once my digital vector baby was ready, I proudly exported the final **.svg file** and sent it over to the lab instructor, successfully concluding my hands-on battle with the digital canvas.
 
 <div align="center">
-  <img src="media/test.jpg" height="600"> 
+  <img src="media/cnc-milling-inkscape-svg.png" height="600"> 
 </div>
 
 ---
@@ -67,9 +67,9 @@ I got to watch safely from behind the enclosure glass as the spindle spun up to 
 
 The end result is a structurally solid, geometrically striking 8-point star tea light holder. Despite the initial 24-hour standoff against Inkscape, the final 39.5 mm pocket fits the candle perfectly with just enough mechanical tolerance to swap it out easily while keeping it beautifully seated.
 
-<div align="center">
-  <img src="media/test2.jpg" height="600"> 
-</div>
+| | |
+| :---: | :---: | 
+| ![Image 1](media/IMG_8482.jpg) | ![Image 2](media/IMG_8483.jpg) | 
 
 ---
 
