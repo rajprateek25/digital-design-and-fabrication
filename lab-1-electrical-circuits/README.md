@@ -9,7 +9,7 @@ Upon connecting the circuit components with different resistances, we made the f
 ---
 
 #### Measurements
-| R<sub>1</sub> [$\Omega$]  | Measured V<sub>1</sub> [V] | Measured V<sub>LED</sub> [V] |
+| R<sub>1</sub> [ $\Omega$ ]  | Measured V<sub>1</sub> [V] | Measured V<sub>LED</sub> [V] |
 |-|-|-|
 | 220   | 2.0  |2.8  |
 | 1000  | 2.5  |2.49 |
@@ -40,7 +40,7 @@ In this task we connected a switch to turn the LED `ON` or `OFF`.
 
 ---
 
-### Observations
+#### Observations
 * The LED glows only when the switch is in `ON` position and does not glow when the switch is turned `OFF`.
 * The switch is non-directional (unlike the LED). If the LED is reversed, it does not light up but the switch works as expected in both the directions.
 
@@ -56,12 +56,12 @@ In this task we connected a switch to turn the LED `ON` or `OFF`.
 
 ---
 
-## Task 1.3: Dimmable LED Circuit
+### Task 1.3: Dimmable LED Circuit
 In this task, we attached a potentiometer to control the flow of current to the LED. W made the following measurements and observations:
 
 ---
 
-### Measurements
+#### Measurements
 | Position |   V<sub>LED</sub> [V] | V<sub>2</sub> [V] |
 |-|-|-|
 | Full brightness          | 3    |3    |
@@ -71,7 +71,7 @@ In this task, we attached a potentiometer to control the flow of current to the 
 
 ---
 
-### Observations 
+#### Observations 
 * Rotating the potentiometer gives us a smooth, continuous control over the intensity of light emited by LED.
 * The data establishes a direct relationship between the LED voltage output _V<sub>LED</sub>_ and the potentiometer voltage output _V<sub>2</sub>_. The potentiometer acts as a variable voltage divider.
 * There is a threshold voltage (approximately 1.9V) below which the LED does not emit any visible light.
@@ -88,17 +88,17 @@ In this task, we attached a potentiometer to control the flow of current to the 
 
 ---
 
-### Task 2.1: Switchable LED Strip
+#### Task 2.1: Switchable LED Strip
 In this task, we were requried to use an IRLZ44N NPN MOSFET to control a high-power 12V LED strip using a 5V logic signal.
 
 ---
 
-### Mechanism
+#### Mechanism
 The MOSFET acts as an electronic switch which controls the Gate Voltage _V<sub>GS</sub>_. When the switch is closed, _V<sub>GS</sub>_ goes high, allowing current to flow from Drain to Source _V<sub>DS</sub>_, turning on the 12V LED strip. 
 
 ---
 
-### Observations
+#### Observations
 1. **Gate Control _V<sub>GS</sub>_**: MOSFET has three terminals: **Gate (G)**, **Drain (D)**, and **Source (S)**. When the mechanical switch S<sub>1</sub> is open, the Gate is connected to the ground through a pull-down resistor (R<sub>pull</sub> = 10k $\Omega$). This ensures the Gate voltage is 0V, keeping the transistor in the `OFF` state.
 2. **Switching States:**
  * **OFF State:** When _V<sub>GS</sub>_ is below the threshold voltage, the internal channel between the Drain and Source is non-conductive (high resistance). No current flows through the 12V LED strip.
@@ -119,12 +119,12 @@ The MOSFET acts as an electronic switch which controls the Gate Voltage _V<sub>G
 
 ---
 
-## Task 2.2: Dimmable LED Strip
+### Task 2.2: Dimmable LED Strip
 In this task, we used the PWM generator to observe how diferent values of Duty Cycle and Frequency affect the perceived light from the LED strip.
 
 ---
 
-### Measurements 
+#### Measurements 
 Behavour of the LED strip for 5 different settings of Duty Cycle with Frequency _(f)_=90 Hz.
 | Duty Cycle (%)|LED Strip  |
 |-|-|
@@ -144,7 +144,7 @@ Behavour of the LED strip for 4 different settings of Frequency _(f)_ with Duty 
 
 ---
 
-### Observations 
+#### Observations 
 * **Duty Cycle Variations (f=90 Hz):** We can control the `ON-TIME` fo the LED by keeping the frequency constant and varying the Duty Cycle.
 * **Frequency Variation (D=0.5):** We observed the transition from visible blinking to a steady glow, known as Flicker Fusion Threshold.
 
