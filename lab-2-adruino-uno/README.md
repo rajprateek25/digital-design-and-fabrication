@@ -1,4 +1,4 @@
-# Introduction to Arduino: Build a custom Alarm Clock
+# Introduction to Arduino
 
 In the exercise 2, we had to complete four sub-circuits to achieve the final objective of building a custom Alarm Clock.
 * **Sub-circuit 1:** Connecting the buzzer
