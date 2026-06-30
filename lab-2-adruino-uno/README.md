@@ -22,7 +22,7 @@ We routed the Digital Pin 12 from the Arduino Uno into a 220 $\Omega$ resistor, 
 
 #### Buzzer Test Code: buzzer_test.ino
 
-The software depends on the digitalWrite() and delay() functions. By alternating the pin between HIGH (5 $\V$) and LOW (0 $\V$), we can control when the buzzer beeps and when it stays silent.
+The software depends on the `digitalWrite()` and `delay()` functions. By alternating the pin between HIGH (5V) and LOW (0V), we can control when the buzzer beeps and when it stays silent.
 
 ```cpp
 const int buzzerPin = 12; 
@@ -45,7 +45,7 @@ void loop() {
 
 #### Observations
 
-* **Rapid Beeping:** When we dropped delays for both digitalWrite() and delay() functions down to `100ms`, it modified a lazy, rhythmic beep into a frantic, high-tempo warning chirp.
+* **Rapid Beeping:** When we dropped delays for both `digitalWrite()` and `delay()` functions down to `100ms`, it modified a lazy, rhythmic beep into a frantic, high-tempo warning chirp.
 * **The Symmetrical Trap:** When we removed the `LOW` phase delay, the code loops back to `HIGH` instantly. To our ears, the buzzer seems to be beeping continuously because the microcontroller is cycling faster than we can perceive.
 
 <video src= "https://github.com/user-attachments/assets/30e43e1f-82c9-4d9e-9ad2-2966eb6e4e25" controls autoplay muted loop style="max-width: 100%;"> </video>
@@ -54,7 +54,7 @@ void loop() {
 
 ### Sub-circuit 2: Connecting the LCD screen
 
-For our second sub-circuit, we needed to integrate visual UI by connecting a LCD screen. We were provided a standard $2 \times 16$ character LCD display. However, instead of wiring it up using parallel layout that exhausts 10 to 12 digital pins, we used **$I2C$ protocol**.
+For our second sub-circuit, we needed to integrate visual UI by connecting a LCD screen. We were provided a standard `2x16` character LCD display. However, instead of wiring it up using parallel layout that exhausts 10 to 12 digital pins, we used **I2C protocol**.
 
 ---
 
@@ -90,7 +90,7 @@ void loop() {}
 
 #### Observations
 
-* **Blank Screen:** When first powered, the screen lit up but showed default solid white blocks. We tuned the contrast potentiometer on the back of the $I2C$ backpack and our text begin to emerge.
+* **Blank Screen:** When first powered, the screen lit up but showed default solid white blocks. We tuned the contrast potentiometer on the back of the I2C backpack and our text begin to emerge.
 * **Uncomplicated Wiring:** I2C protocol allows multiple master and slave components to share a communication bus using just **two signal wires** thus simplifying the wiring.
 
 <div align="center">
@@ -106,7 +106,7 @@ void loop() {}
 
 For our third sub-circuit, we needed to integrate a **Real-Time Clock (RTC) module** driven by an independent onboard coin-cell backup battery.
 
-Since RTC also communicates over the $I2C$ protocol, we didn't need to find open digital pins on the Arduino. Instead, we wired the RTC's SDA and SCL pins directly into the same breadboard rails as the LCD.
+Since RTC also communicates over the I2C protocol, we didn't need to find open digital pins on the Arduino. Instead, we wired the RTC's SDA and SCL pins directly into the same breadboard rails as the LCD.
 
 ---
 
@@ -333,7 +333,7 @@ void loop() {
 ---
 
 #### Observations
-* **Randomizing Math Problem:** After a few test runs, the math problem appeared to be repeating. We fixed the randomization by reading floating, analog white noise from an unconnected analog pin (analogRead(A0)) to seed the algorithm, ensuring a fresh math challenge every morning.
+* **Randomizing Math Problem:** After a few test runs, the math problem appeared to be repeating. We fixed the randomization by reading floating, analog white noise from an unconnected analog pin `(analogRead(A0))` to seed the algorithm, ensuring a fresh math challenge every morning.
 * **Control UI Scale:** We added dedicated Up and Down navigation feature for the buttons to enable user to make adjustments quickly instead of looping through alll the digits if they missed their target digit.
 
 <video src= "https://github.com/user-attachments/assets/b9994a65-a222-4d7a-a64f-eeebd8a0c985" controls autoplay muted loop style="max-width: 100%;"> </video>
