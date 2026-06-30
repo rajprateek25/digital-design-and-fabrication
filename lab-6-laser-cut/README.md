@@ -109,6 +109,10 @@ As expected, the rastering and vectoring for the front-side completed perfectly.
   <video src= "https://github.com/user-attachments/assets/94672754-e354-4e97-bd9e-84fb5290df1b" controls autoplay muted loop style="max-width: 100%;"> </video> 
 </div>
 
+---
+
+## Final Product
+
 I finally succeeded in printing a business card at the third attempt. Upon observing closely, I saw some charring marks around the edges, which couldn've been avoided using a paper tape before starting to print.
 
 <div align="center">
