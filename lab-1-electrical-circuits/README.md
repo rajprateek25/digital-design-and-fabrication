@@ -1,4 +1,5 @@
 # Electrical Circuits
+In the exercise 1, we are tasked with building and testing five different electrical circuits.
 
 ## Task 1.1: LED Control Circuit
 
