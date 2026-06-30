@@ -1,30 +1,24 @@
-# 🚀 Breathing Life into Hardware: Building an Interactive Pneumatic Installation
+# Sensors & Actuators
 
-Welcome back to my hardware engineering series! After conquering I2C buses and state machines in Lab 2, Lab 3 plunges into the world of physical computing and soft robotics. The goal? Build an automated pneumatic system consisting of two air pumps, a solenoid valve, and an inflatable pillow, and bring it to life with sensor-driven interactions.
+In the exercise 3, students were asked to create a pneumatic system consisting of two air pumps, an air valve, and an inflatable pillow and integrating a sensor interaction according to our own design.
 
 ---
 
-## 📝 Post 1: Isolating the Power (Enter the MOSFET)
+## Basic Setup
 
-The Arduino Uno's digital pins run at 5V and max out at around 40mA. The two ZR370-02PM diaphragm air pumps I used draw around 500mA each under load , and the FA0520E air valve draws ~400mA. To safely switch these heavy-duty inductive loads without frying the microcontroller, I wired up three IRF520 MOSFET driver modules.
+The Arduino Uno's digital pins run at 5V and support a maximum of 40mA. The two diaphragm air pumps along with the air air valve provided to us draw a much higher current load than supported. To safely connect these components to the microcontroller,  we first connected hree IRF520 MOSFET driver modules.
 
-### The Hardware Setup
+---
 
-The system isolates the low-power logic from the high-power physical loads.
+### Hardware Setup
+* Arduino Uno is powered via laptop USB port.
+* MOSFETs load side connects to the external lab power supply.
+* Arduino Uno's GND and the external power supply's GND must be tied together to establish a shared ground reference across the circuit.
 
-* The Arduino logic processing is powered entirely via USB.
+---
 
-
-* The load side of the MOSFETs connects to an external lab power supply.
-
-
-* Crucially, the Arduino's GND and the external power supply's GND must be tied together to establish a shared, unified ground reference across the entire circuit.
-
-
-
-### The Open-Loop Code: A Basic Breath
-
-To verify my actuators, I started with a simple, hardcoded timer loop to test inflation, hold, and deflation states.
+### Code to Test Actuators
+To verify the actuators, I started with a simple, hardcoded timer loop to test inflation, hold, and deflation states.
 
 ```cpp
 const int PUMP1_PIN = 3;      // (Deflation pump)
@@ -59,12 +53,11 @@ void loop() {
 
 ```
 
-### Engineering Insights
+---
 
-* **The "Insulation Trap":** During initial testing, my MOSFET status LEDs lit up correctly, but the pumps sat completely dead. After some frantic debugging, I realized the tiny screw terminals were clamped down onto the plastic wire insulation instead of the bare copper core. Stripping back the wire a few millimeters fixed it instantly.
-* **VCC is Optional:** Interestingly, the VCC pin on the IRF520 control header isn't strictly needed for switching. Pulling the SIG line HIGH to 5V provides plenty of gate voltage to complete the circuit and light the onboard status LED simultaneously.
-
-### The Circuit says "Cheese"
+### Observations
+* **Insulation may cause issues:** During initial testing, the MOSFET status LEDs lit up correctly, but the pumps did not work. After troubleshooting the connections, we realized the tiny screw terminals were clamped down onto the plastic wire insulation instead of the bare copper core. Stripping the insulation a little and clamping the wires correctly fixed it.
+* **Optional VCC:** The VCC pin on the MOSFET isn't necessarily needed for switching. Connecting the SIG line HIGH to 5V provides enough gate voltage to complete the circuit and light the status LED.
 
 <div align="center">
 
@@ -77,13 +70,14 @@ void loop() {
 
 ---
 
-## 📝 Post 2: Making it Interactive with a PIR Sensor
+## Integrating PIR Motion Sensor for Interaction
+In order to make the system interactive, we integrated an HC-SR501 Passive Infrared (PIR) motion sensor. The Arduino only reacts when the motion sensor detects a movement in the room and deflates when there is no detected movement.
 
-A static timer is boring. To elevate the project, I brought in an HC-SR501 Passive Infrared (PIR) motion sensor. The goal: The cushion should inflate dynamically when it detects human presence and flatten out when the room is empty.
+---
 
-### The Closed-Loop Code: Edge-Triggered Automation**
+### Code to Integrate Motion Sensor
 
-Rather than spamming the MOSFETs with constant `digitalWrite()` commands, I implemented an edge-triggered state machine. The Arduino only acts at the exact moment a motion transition occurs.
+We designed the system such that the Arduino only reacts when the motion sensor detects a movement in the room and deflates when there is no detected movement.
 
 ```cpp
 // Hardware Pin Definitions
@@ -145,22 +139,15 @@ void loop() {
 
 ```
 
-### Engineering Insights
+---
 
-* **Eliminating Blocking Delays:** My early experiments relied heavily on `delay()`, which literally freezes the microcontroller blind during execution. By using an edge-detection method (`currentMotionState != lastMotionState`), the loop runs freely and remains hyper-responsive to new sensor inputs without locking up.
-* **The 100ms CPU Breather:** At the bottom of the loop, there is a tiny `delay(100)`. Reading a digital pin thousands of times a second without pause forces the processor to run at 100% capacity continuously. A tenth-of-a-second pause is unnoticeable to a human interacting with the cushion, but it gives the silicon a massive, power-saving break and prevents the Serial Monitor from overflowing.
-
-### The Circuit says "Cheese"
+### Observations
+* **Hardcoded delays no longer required:** In our initial implementation, we hardcoded delay(5000) or delay(3000) miliseconds, which was limited in functionality and froze the microcontroller during execution. By using a motion sensing method,(currentMotionState != lastMotionState), the loop runs independently and remains responsive to new inputs from the sensor.
+* **Intentional 100ms delay:** At the end of the loop, we added a delay(100). Continuously reading a digital pin thousands of times in a second without a break may cause Serial Monitor to overflow and the processor to run at 100% capacity. A 100 milisecond pause is unnoticeable to a human interacting with the system, but it gives the processor a massive and power-saving break.
 
 <video src= "https://github.com/user-attachments/assets/f174891c-22fe-42f2-a246-e06e9d0b989a" controls autoplay muted loop style="max-width: 100%;"> </video>
 
 <video src= "https://github.com/user-attachments/assets/02c74f94-cea7-4d33-b036-2cc6e2099f1b" controls autoplay muted loop style="max-width: 100%;"> </video>
-
----
-
-## 🏁 Wrap-Up
-
-Lab 3 demonstrated how low-level microcontroller logic translates into high-current physical action. What started as a messy tangle of silicone tubing and basic timers evolved into a fully closed-loop architectural prototype that dynamically breathes in response to human presence.
 
 ---
 
