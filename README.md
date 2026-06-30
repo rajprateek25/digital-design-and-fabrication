@@ -4,12 +4,12 @@ Welcome to the table of contents for the lab exercises performed as part of the 
 
 | Serial # | Documentation Link | Description | Partner |
 | :--- | :--- | :--- | :--- |
-| Lab 1 | **[Electrical Circuits](./lab-1-electrical-circuits/README.md)**  | Covers foundational circuit behavior, component directionality, and MOSFET switching. Compares analog resistive dimming with highly efficient digital PWM control using high-power loads. | Maik Bernert
-| Lab 2 | **[Adruino Uno](./lab-2-adruino-uno/README.md)**  | Covers the integration of an Arduino Uno with an I2C LCD screen, a Real-Time Clock (RTC) module, a buzzer, and push buttons using internal pull-up resistors. Focuses on I2C communication protocols and modular circuit building to design and program a functional, standalone digital alarm clock. | Khushil Dave
-| Lab 3 | **[Sensors & Actuators](./lab-3-sensors-and-actuators/README.md)**  | Covers the integration of an Arduino Uno with high-current DC actuators (dual air pumps and an electronic valve) using IRF520 MOSFET driver modules. Focuses on balancing power domains with a common ground , understanding pneumatic switching behavior , and integrating real-time sensor inputs to design an interactive, responsive soft-robotics system. | Khushil Dave
-| Lab 4 | **[E-Textiles](./lab-4-e-textiles/README.md)**  | Covers hand-fabricating an 8-LED wearable matrix using uninsulated conductive thread. Highlights a complete structural layout redesign to solve geometry-induced short circuits, utilizing high-visibility tracing to conquer the physical constraints of flexible electronics. | -
-| Lab 5 | **[CNC Milling](./lab-5-cnc-milling/README.md)**  | Covers the designing of an 8-point star tea light holder inside Inkscape according to precise dimensional specifications, followed by instructor-led CAM processing and subtractive hardwood fabrication. | -
-| Lab 6 | **[Laser Cutting](./lab-6-laser-cut/README.md)**  | Covers the evolutionary journey of outsmarting the lab's Epilog laser cutter cycling througn transparent acrylic, dual-tone plastic, and plywood to create the perfect scannable business card. | -
+| Lab 1 | **[Electrical Circuits](./lab-1-electrical-circuits/README.md)**  | Understanding basic circuit behavior, component directionality, and MOSFET switching. Comparing analog resistive dimming with PWM control using high-power loads. | Maik Bernert
+| Lab 2 | **[Adruino Uno](./lab-2-adruino-uno/README.md)**  | Integrating an Arduino Uno with an I2C LCD screen, a Real-Time Clock (RTC) module, a buzzer, and push buttons to design and program a functional, standalone digital alarm clock. | Khushil Dave
+| Lab 3 | **[Sensors & Actuators](./lab-3-sensors-and-actuators/README.md)**  | Integrating an Arduino Uno with dual air pumps and an electronic valve using IRF520 MOSFET driver modules. | Khushil Dave
+| Lab 4 | **[E-Textiles](./lab-4-e-textiles/README.md)**  | Designing a wearable textile patch using LEDs, coin battery/holder, and uninsulated conductive thread. | -
+| Lab 5 | **[CNC Milling](./lab-5-cnc-milling/README.md)**  | Designing a tea light candle holder in Inkscape for CNC Milling operation . | -
+| Lab 6 | **[Laser Cutting](./lab-6-laser-cut/README.md)**  | Designing and creating a custom business card in Inkscape for cutting and printing using Laser-printer. | -
 | Lab 7 | **[Onshape](./lab-7-onshape/README.md)**  | Page under construction.  | -
 
 
