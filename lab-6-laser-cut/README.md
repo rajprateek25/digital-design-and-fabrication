@@ -74,6 +74,7 @@ The rastering and vectoring worked perfectly, and the end-product was a shiny lo
   <img src="media/attempt 2 output.jpg" height="600">
 </div>
 
+<br>
 As I removed the card from the laser printer bed for printing the back-side, the realisation dawned - except for the front the acrylic is entirely black; rastering a QR code on a black surface wouldn't result in enough contrast for a smartphone camera to detect it. This was my second failure.
 
 ---
