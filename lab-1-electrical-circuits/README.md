@@ -1,4 +1,4 @@
-# LAB 1 Exercise 1: Electrical Circuits
+# Electrical Circuits
 
 ## Task 1.1: LED Control Circuit
 
