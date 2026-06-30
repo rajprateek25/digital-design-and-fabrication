@@ -99,7 +99,7 @@ The MOSFET acts as an electronic switch which controls the Gate Voltage _V<sub>G
 ---
 
 #### Observations
-1. **Gate Control _V<sub>GS</sub>_**: MOSFET has three terminals: **Gate (G)**, **Drain (D)**, and **Source (S)**. When the mechanical switch S<sub>1</sub> is open, the Gate is connected to the ground through a pull-down resistor (R<sub>pull</sub> = 10k $\Omega$). This ensures the Gate voltage is 0V, keeping the transistor in the `OFF` state.
+1. **Gate Control _V<sub>GS</sub>_**: MOSFET has three terminals: **Gate (G)**, **Drain (D)**, and **Source (S)**. When the mechanical switch S<sub>1</sub> is open, the Gate is connected to the ground through a pull-down resistor (R<sub>pull</sub> = 10k $\Omega$). This ensures the Gate voltage is 0V, keeping the transistor turned `OFF`.
 2. **Switching States:**
  * **OFF State:** When _V<sub>GS</sub>_ is below the threshold voltage, the internal channel between the Drain and Source is non-conductive (high resistance). No current flows through the 12V LED strip.
  * **ON State:** When S<sub>1</sub> is closed, 5V is applied to the Gate. This creates an electric field that opens a conductive channel between the Drain and Source. The resistance _V<sub>DS</sub>_ drops significantly, allowing current to flow from the 12V supply through the LED strip to the common ground.
