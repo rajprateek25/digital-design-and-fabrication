@@ -22,7 +22,7 @@ We routed the Digital Pin 12 from the Arduino Uno into a 220 $\Omega$ resistor, 
 
 #### Buzzer Test Code: buzzer_test.ino
 
-The software depends on the `digitalWrite()` and `delay()` functions. By alternating the pin between HIGH (5V) and LOW (0V), we can control when the buzzer beeps and when it stays silent.
+The software depends on the `digitalWrite()` and `delay()` functions. By alternating the pin between `HIGH` (5V) and `LOW` (0V), we can control when the buzzer beeps and when it stays silent.
 
 ```cpp
 const int buzzerPin = 12; 
