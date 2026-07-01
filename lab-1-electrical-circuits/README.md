@@ -99,13 +99,14 @@ The MOSFET acts as an electronic switch which controls the Gate Voltage _V<sub>G
 ---
 
 #### Observations
-1. **Gate Control _V<sub>GS</sub>_**: MOSFET has three terminals: **Gate (G)**, **Drain (D)**, and **Source (S)**. When the mechanical switch S<sub>1</sub> is open, the Gate is connected to the ground through a pull-down resistor (R<sub>pull</sub> = 10k $\Omega$). This ensures the Gate voltage is 0V, keeping the transistor turned `OFF`.
-2. **Switching States:**
- * **OFF State:** When _V<sub>GS</sub>_ is below the threshold voltage, the internal channel between the Drain and Source is non-conductive (high resistance). No current flows through the 12V LED strip.
- * **ON State:** When S<sub>1</sub> is closed, 5V is applied to the Gate. This creates an electric field that opens a conductive channel between the Drain and Source. The resistance _V<sub>DS</sub>_ drops significantly, allowing current to flow from the 12V supply through the LED strip to the common ground.
-3. **PWM and Perceived Brightness:** By using a PWM Signal Generator instead of a simple toggle switch, the Gate is turned `ON` and `OFF` thousands of times per second.
- * **Duty Cycle:** A higher duty cycle results in higher LED brightness.
- * **Frequency:** At lower frequencies (e.g., 5 Hz), the eye perceives individual blinks. As the frequency increases beyond the 60 Hz threshold, the flickering becomes invisible to the eye, resulting in a steady, dimmed light.
+
+1. **Gate Control _V<sub>GS</sub>_:** **Gate (G)**, **Drain (D)**, and **Source (S)** are the three terminals of a MOSFET. A pull-down resistor (R<sub>pull</sub> = 10k $\Omega$) connects the gate to the ground when the mechanical switch S<sub>1</sub> is open. This keeps the transistor `OFF` by guaranteeing that the gate voltage is 0V.
+2. **Changing States:**
+    * **OFF State:** The internal channel between the drain and source is non-conductive (high resistance) when _V<sub>GS</sub>_ is lower than the threshold voltage. The 12V LED strip does not receive any current.
+    * **ON State:** The gate receives 5V when S<sub>1</sub> is closed. An electric field is produced as a result, which opens a conductive channel between the source and drain. Current moves from the 12V supply through the LED strip to the common ground when the resistance _V<sub>DS</sub>_ considerably decreases.
+3. **PWM and Perceived Brightness:** The Gate is turned `ON` and `OFF` thousands of times per second using a PWM Signal Generator rather than a straightforward toggle switch.
+    * **Duty Cycle:** The brightness of an LED's increases with a higher duty cycle.
+    * **Frequency:** Our eyes can only detect individual blinks at lower frequencies (e.g., 5 Hz). A constant, muted light results from the flickering becoming undetectable to the eyes as the frequency rises above the 60 Hz threshold.
 
 ---
 
