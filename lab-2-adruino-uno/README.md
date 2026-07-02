@@ -25,8 +25,9 @@ We routed the Digital Pin 12 from the Arduino Uno into a 220 $\Omega$ resistor, 
 The software depends on the `digitalWrite()` and `delay()` functions. By alternating the pin between `HIGH` (5V) and `LOW` (0V), we can control when the buzzer beeps and when it stays silent.
 
 ```cpp
-const int buzzerPin = 12; 
-
+.
+.
+.
 void setup() {
   pinMode(buzzerPin, OUTPUT);    // Configure our pin as an output channel
 }
@@ -38,7 +39,9 @@ void loop() {
   digitalWrite(buzzerPin, LOW);  // Sound OFF
   delay(1000);                   // Silence for 1 second
 }
-
+.
+.
+.
 ```
 
 ---
@@ -69,11 +72,9 @@ Before we could printing something on the LCS screen, we had to find the LCD's u
 Once we found the address for the LCD screen, we could reference address in the code block to print a custom greeting message.
 
 ```cpp
-#include <Wire.h> 
-#include <LiquidCrystal_I2C.h>
-
-LiquidCrystal_I2C lcd(0x27, 16, 2); // Address 0x27, 16 columns, 2 rows
-
+.
+.
+.
 void setup() {
   lcd.init();                      
   lcd.backlight();                  // Turn on the screen's LED backlight
@@ -81,9 +82,9 @@ void setup() {
   lcd.setCursor(0, 0);              // Start typing at top-left corner (col 0, row 0)
   lcd.print("Hello! Prateek");      
 }
-
-void loop() {}
-
+.
+.
+.
 ```
 
 ---
@@ -170,22 +171,6 @@ After assembling and validating all four sub-circuits, we were now left with bui
 * **Button 1:** Enter "Settings Mode".
 * **Button 2:** Set an Alarm.
 * **Button 3:** Solve a random math challenge to silence the alarm.
-
-```
-+-------------------------------------------------------------------+
-|                        SMART ALARM CLOCK                          |
-|                                                                   |
-|  [I2C LCD Display] ---------+                                     |
-|   (Shows Time / Math)       |                                     |
-|                             v                                     |
-|  [I2C RTC Module] -----> [SHARED] ---> [Arduino Uno]              |
-|   (Tracks Real Time)     I2C BUS          |   |                   |
-|                                           |   +-> [Piezo Buzzer]  |
-|  [3x Push Buttons]                        |        (Audio Alarm)  |
-|   (Mode, Up, Down) -----------------------+                       |
-+-------------------------------------------------------------------+
-
-```
 
 ---
 
