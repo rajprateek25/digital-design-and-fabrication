@@ -21,16 +21,9 @@ The Arduino Uno's digital pins run at 5V and support a maximum of 40mA. The two 
 To verify the actuators, I started with a simple, hardcoded timer loop to test inflation, hold, and deflation states.
 
 ```cpp
-const int PUMP1_PIN = 3;      // (Deflation pump)
-const int PUMP2_PIN = 4;      // (Inflation pump)
-const int VALVE_PIN = 5;      // (Air Valve)
-
-void setup() {
-  pinMode(PUMP1_PIN, OUTPUT);
-  pinMode(PUMP2_PIN, OUTPUT);
-  pinMode(VALVE_PIN, OUTPUT);
-}
-
+.
+.
+.
 void loop() {
   // --- INFLATION PHASE ---
   digitalWrite(VALVE_PIN, LOW);   // Close valve to seal the system
@@ -50,7 +43,9 @@ void loop() {
   digitalWrite(VALVE_PIN, HIGH);  // Open valve to vent air to atmosphere
   delay(5000);                    // Wait for deflation
 }
-
+.
+.
+.
 ```
 
 ---
@@ -80,33 +75,9 @@ In order to make the system interactive, we integrated an HC-SR501 Passive Infra
 We designed the system such that the Arduino only reacts when the motion sensor detects a movement in the room and deflates when there is no detected movement.
 
 ```cpp
-// Hardware Pin Definitions
-#define PIR_PIN 2         // PIR Sensor Output Pin
-#define PUMP1_PIN 3       // MOSFET 1 (Deflation Pump)
-#define PUMP2_PIN 4       // MOSFET 2 (Inflation Pump)
-#define VALVE_PIN 5       // MOSFET 3 (Air Valve)
-
-int currentMotionState = LOW;
-int lastMotionState = LOW;
-
-void setup() {
-  Serial.begin(9600);
-  
-  pinMode(PIR_PIN, INPUT);
-  pinMode(PUMP1_PIN, OUTPUT);
-  pinMode(PUMP2_PIN, OUTPUT);
-  pinMode(VALVE_PIN, OUTPUT);
-
-  // Initial Safety State: Turn off all pumps, open the valve
-  digitalWrite(PUMP1_PIN, LOW);
-  digitalWrite(PUMP2_PIN, LOW);
-  digitalWrite(VALVE_PIN, HIGH); 
-
-  Serial.println(F("PIR Warm-up Phase... Calibrating sensor..."));
-  delay(20000); 
-  Serial.println(F("System Active. Monitoring for motion..."));
-}
-
+.
+.
+.
 void loop() {
   currentMotionState = digitalRead(PIR_PIN);
 
@@ -136,7 +107,9 @@ void loop() {
 
   delay(100); 
 }
-
+.
+.
+.
 ```
 
 ---
