@@ -10,7 +10,7 @@ Welcome to the table of contents for the lab exercises performed as part of the 
 | Lab 4 | **[E-Textiles](./lab-4-e-textiles/README.md)**  | Designing a wearable textile patch using LEDs, coin battery/holder, and uninsulated conductive thread. | -
 | Lab 5 | **[CNC Milling](./lab-5-cnc-milling/README.md)**  | Designing a tea light candle holder in Inkscape for CNC Milling operation . | -
 | Lab 6 | **[Laser Cutting](./lab-6-laser-cut/README.md)**  | Designing and creating a custom business card in Inkscape for cutting and printing using Laser-printer. | -
-| Lab 7 | **[Onshape](./lab-7-onshape/README.md)**  | Page under construction.  | -
+| Lab 7 | **[3D Printing](./lab-7-onshape/README.md)**  | Learning about designing in Onshape through Onshape provided training videos, and then designing a product for 3D printing which can be utilized in daily life.  | -
 
 
 
