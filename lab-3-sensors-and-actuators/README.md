@@ -1,12 +1,12 @@
 # Sensors & Actuators
 
-In the exercise 3, students were asked to create a pneumatic system consisting of two air pumps, an air valve, and an inflatable pillow and integrating a sensor interaction according to our own design.
+In the exercise 3, students were asked to create a pneumatic system consisting of two air pumps, an air valve, and an inflatable pillow and integrating a sensor interaction according to their own design.
 
 ---
 
 ## Basic Setup
 
-The Arduino Uno's digital pins run at 5V and support a maximum of 40mA. The two diaphragm air pumps along with the air air valve provided to us draw a much higher current load than supported. To safely connect these components to the microcontroller,  we first connected hree IRF520 MOSFET driver modules.
+The Arduino Uno's digital pins run at 5V and support a maximum of 40mA. The two diaphragm air pumps along with the air air valve provided to us draw a much higher current load than supported. To safely connect these components to the microcontroller,  we first connected three IRF520 MOSFET driver modules.
 
 ---
 
@@ -18,7 +18,7 @@ The Arduino Uno's digital pins run at 5V and support a maximum of 40mA. The two 
 ---
 
 ### Code to Test Actuators
-To verify the actuators, I started with a simple, hardcoded timer loop to test inflation, hold, and deflation states.
+To verify the actuators, we started with a simple, hardcoded timer loop to test inflation, hold, and deflation states.
 
 ```cpp
 .
@@ -51,8 +51,10 @@ void loop() {
 ---
 
 ### Observations
-* **Insulation may cause issues:** During initial testing, the MOSFET status LEDs lit up correctly, but the pumps did not work. After troubleshooting the connections, we realized the tiny screw terminals were clamped down onto the plastic wire insulation instead of the bare copper core. Stripping the insulation a little and clamping the wires correctly fixed it.
-* **Optional VCC:** The VCC pin on the MOSFET isn't necessarily needed for switching. Connecting the SIG line HIGH to 5V provides enough gate voltage to complete the circuit and light the status LED.
+* **Insulation may cause issues:** During initial testing, the MOSFET status LEDs lit up correctly, but the pumps did not work. After troubleshooting the connections, we realized that the screw terminals were clamped down onto the plastic wire insulation instead of the bare copper core. Stripping the insulation a little and clamping the wires correctly fixed it.
+* **Issues with the code:** During the  the initial attempt, inflation mechanism did not perform as expected due to issues with code logic and pin assignment. After updating the code logic and assigning the correct output pins, the system worked as expected.
+* **Air tubes incorrectly connected:** Initially, we connected both the air tubes to the  DC motors in the inward airflow direction. Consequently, both the pumps where inflating the pillow in a round robin fashion, despite being assigned correct roles via code. Neither of the pumps was performing deflation and the pillow grew larger and larger in size. After spending some time inspecting the airflow direction, we fixed the air tube connections and the pneumatic system started functioning properly.
+* **Connecting VCC is Optional:** MOSFET's VCC pin isn't necessarily needed for switching. Connecting the SIG line `HIGH` to 5V provides enough gate voltage to complete the circuit and light the status LED.
 
 <div align="center">
 
@@ -72,7 +74,7 @@ In order to make the system interactive, we integrated an HC-SR501 Passive Infra
 
 ### Code to Integrate Motion Sensor
 
-We designed the system such that the Arduino only reacts when the motion sensor detects a movement in the room and deflates when there is no detected movement.
+We designed the system such that the Arduino only reacts when the PIR motion sensor detects a movement in the room, and deflates when there is no movement detected.
 
 ```cpp
 .
@@ -104,8 +106,6 @@ void loop() {
     
     lastMotionState = currentMotionState;
   }
-
-  delay(100); 
 }
 .
 .
@@ -115,8 +115,9 @@ void loop() {
 ---
 
 ### Observations
-* **Hardcoded delays no longer required:** In our initial implementation, we hardcoded delay(5000) or delay(3000) miliseconds, which was limited in functionality and froze the microcontroller during execution. By using a motion sensing method,(currentMotionState != lastMotionState), the loop runs independently and remains responsive to new inputs from the sensor.
-* **Intentional 100ms delay:** At the end of the loop, we added a delay(100). Continuously reading a digital pin thousands of times in a second without a break may cause Serial Monitor to overflow and the processor to run at 100% capacity. A 100 milisecond pause is unnoticeable to a human interacting with the system, but it gives the processor a massive and power-saving break.
+* **PIR Motion Sensor in Action:** Movement around the system was continuously observed by the motion sensor. The microcontroller turned on the Inflation Pump (Pump 2) and closed the valve when motion was detected, causing the air pillow to expand. The system entered the deflation phase when no motion was detected, Deflation Pump (Pump 1) was turned on to expel the air from the system, Pump 2 was switched off, and the valve was opened.
+* **Hardcoded delays no longer required:** In our initial implementation, we hardcoded delay(5000) or delay(3000) miliseconds, which was limited in functionality and suspended the microcontroller during execution. By using a motion sensing method,`(currentMotionState != lastMotionState)`, the loop runs independently and remains responsive to new inputs from the sensor.
+* **Logging Detected Motion:** The motion detection logs generated by the system were sent to the Serial Monitor as output, which displayed messages such as “Motion Detected” and “Area Clear” suggesting that the sensor is working as we expected.
 
 <video src= "https://github.com/user-attachments/assets/f174891c-22fe-42f2-a246-e06e9d0b989a" controls autoplay muted loop style="max-width: 100%;"> </video>
 
