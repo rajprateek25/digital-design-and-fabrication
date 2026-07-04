@@ -28,13 +28,8 @@ I decided to design a custom wall-mounted key-holder. The inspiration for this d
 I kicked-off designing the key-holder by creating the first sketch to create a *schematic* matching the shape of a house.
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
-| :---: | :---: | :---: | :---: | :---: | :---: | 
+| :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 1 (Base) | Right plane | Extrude 1 | Face of Sketch 1 (Base) | Solid/New | 10 mm |
-
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
 
 <div align="center">
   <img src="media/sketch-1-base" height="600"> 
@@ -54,7 +49,7 @@ I kicked-off designing the key-holder by creating the first sketch to create a *
 After setting up the basic shape, I placed 5 equal sized circles having `diameter=06 mm`, placed at equal distance from each other and from the foundation line of the basic outline. These circles are where the material will extend to create key hangers. Then, I created 5 additional equal sized circles having `diameter=10 mm` and made them align concentrically to the hanger cirlces. Being slighltly larger in diameter, these circles after being extended will act as the hanger-lips which will prevent the keys from slipping off of the hangers.
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
-| :---: | :---: | :---: | :---: | :---: | :---: | 
+| :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 2 (Hangers) | Faces of Sketch 1 (Base) | Extrude 2 | Faces of Sketch 2 (Hangers) | Solid/Add | 20 mm |
 | Sketch 3 (hanger-lips) | Faces of Extrude 2 | Extrude 3 | Faces of Sketch 3 (Hanger Lips) | Solid/Add | 03 mm |
 
@@ -90,8 +85,8 @@ In order to introduce additonal strength in the design, I added fillets at the t
 _Fillet 1_  and assigned it a `Radius=2 mm`.
 
 | Fillet Name | Fillet Type | Entities to Fillet | Measurement | Control | Radius |
-| :---: | :---: | :---: | :---: | :---: | :---: | 
-| Fillet 1 | Edge | Edge of Extrude 2/3 | Radius | Distance | 2 mm |
+| :--- | :--- | :--- | :--- | :--- | ---: | 
+| Fillet 1 | Edge | Edge of Extrude 2/3 | Radius | Distance | 02 mm |
 
 <div align="center">
   <img src="media/fillet-1" height="600"> 
@@ -107,7 +102,7 @@ _Fillet 1_  and assigned it a `Radius=2 mm`.
 At this stage, I could see my design slowly taking shape. The design seemed quite bland and suddenly an idea struck me! I decided to add circular picture-slot having `diameter=70 mm`, which can be used to place a desired picture after fabricaion, to give the product even more personalized look and feel.
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
-| :---: | :---: | :---: | :---: | :---: | :---: | 
+| :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 4 (Picture Slot) | Face of Extrude 1 | Extrude 4 | Face of Sketch 4 (Picture Slot) | Solid/Remove | 02 mm |
 
 <div align="center">
@@ -124,7 +119,7 @@ At this stage, I could see my design slowly taking shape. The design seemed quit
 My design was almost at the finish line. Since I was designing the key-holder to be mounted on a wall, it was important include a nail-slot. I researched and found out that mostly nails used in household applications come with a nail-butt having `thickness=02 mm`. So, I creating the nail-slot at the backside of the key-holder and kept `thickness=04 mm` to keep the nail safely locked inside the material.
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
-| :---: | :---: | :---: | :---: | :---: | :---: | 
+| :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 5 (Nail Slot) | Face of Extrude 1 | Extrude 5 | Faces of Sketch 5 (Nail Slot Front) | Solid/Remove | 04 mm |
 
 <div align="center">
@@ -140,8 +135,8 @@ My design was almost at the finish line. Since I was designing the key-holder to
 As soon as Extrude 5 rendered the output, the realization dawned that the nail-slot I created has a design flaw and is incomplete. The current design allowed the nail-butt to get lodged but it didn't provide any mechanism to lock it in place. To address this issue, I had to create a nail-slot base component, which was wider than the nail-slot front to allow the nail-butt to move vertically and lock it in place. 
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
-| :---: | :---: | :---: | :---: | :---: | :---: | 
-| Sketch 6 (Nail Slot Base) | Face of Extrude 5 | Extrude 6 | Faces of Sketch 6 (Nail Slot Base) | Solid/Remove | 02.5 mm |
+| :--- | :--- | :--- | :--- | :--- | ---: | 
+| Sketch 6 (Nail Slot Base) | Face of Extrude 5 | Extrude 6 | Faces of Sketch 6 (Nail Slot Base) | Solid/Remove | 2.5 mm |
 
 <div align="center">
   <img src="media/sketch-6-nail-slot-back" height="600"> 
@@ -157,7 +152,7 @@ As soon as Extrude 5 rendered the output, the realization dawned that the nail-s
 The final addition to the design was to emboss our names at the front key-holder. 
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
-| :---: | :---: | :---: | :---: | :---: | :---: | 
+| :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 7 (Names) | Face of Sketch 4 (Picture Slot) | Extrude 7 | Faces of Sketch 7 (Names) | Solid/Add | 02 mm |
 
 <div align="center">
