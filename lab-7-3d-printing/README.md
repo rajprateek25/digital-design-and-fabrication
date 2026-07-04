@@ -204,30 +204,44 @@ After importing the Onshape project into the slicer software, I positioned the _
 
 ---
 
-### Final Product
-The key-holder looked just as I imagined and designed. It was a fun experience designing and fabricating something of utility on my own.
+## Final Product
+The key-holder turned out just as I imagined, and designed. It was a fun experience ideating and then fabricating something of utility on my own.
+
+<div align="center">
+
+  |  Supports | Finished Product | Nail Slot Test | Stress Test |  
+  | :---: | :---: | :---: | :---: |
+  | <img src="media/final-1.jpg" height="600"> | <img src="media/final-2.jpg" height="600"> | <img src="media/final-3.jpg" height="600"> | <img src="media/final-4.jpg" height="600"> | 
+  
+</div>
 
 ---
 
-### Observations
+## Observations
+
+---
+
+### Modelling in Onshape
 * Selecting the correct _Sketch Plane_ for every sketch is of utmost important.
 * Sketches must be fully constraint. Sketches with errors appear with a blue dot in the features pane.
 * In order to use the components residing on different plane, tilt the model slightly, select the desired component and then `Right-Click` > `Use` to apply constraints across planes, example for hangers and hanger-lips.
 * _Fillets_ between intersecting surfaces or edges result in a smooth arc, reduced stress concentrations, prevent structural fatigue and provide strength to the design. In my design, fillets helped reinforce the hangers so they do not snap when a bunch of keys are hanged onto them.
 * Designing a nail-slot appeared straightforward at first but soon I realised that it needs atleast two components, the wide base and a narrower front to allow nail-butt to lodge in and then allow vertical movement so that the key-holder stays securely may not securely hang on a nail.
+
+---
+
+### Modelling in QIDI studio
+* Print orientation of the 3D model greatly impacts its strength and adhesion to the build plate. 
+* Despite setting constraints in Onshape, we can scale-up or scale-down the size of the 3D model within the slicer.
+* We can observe how and which components of the project will printed in chronological as well as reverse-chronological order to understand the fabrication process.
+* 3D prints are anisotropic, which means they are much weaker along the Z-axis (between layers) than along the X and Y axes.
+* Since the flattest and widest part was rhe backside, I enabled tree-type supports for the pegs to ensure stability while printing. 
+  
+---
+
+### Exporting Models across Platforms 
 * The CAD model can be exported from Onshape in the .STEP file format which can be imported in the slicer software.
-* The CAd model can be exported from the slicer software in format.
-* We can observe how and which components of the project will printed in chronological as well as reverse-chronological order to understand the fabrication process. 
-* I used the multiple constraint utilities to define the geometry of my sketches
-    * _Middle point constraint_ to align the vertical construction line to the middle of the foundation line.
-    * _Vertical constraint_ for both the lines represeting the walls.
-    * _Equal constraint_ for the lines representign slop[ping roof
-    * _Concentric constraint_
-    * _Symmetric constraint_ to make the rectange aling symmetrically along the vertical construction line.
-    * _Coincident constraint_ to make the circle and rectangle coincide at the center of the circle.
-    * _Dimension constraint_ to lock the diameter of circle, dimensions of the rectange,a distance of the rectangle from the sloping roof.
-    * _Tangent constraint_ to create lines for the base originating from the circle.
-    * _Coincident constraint_ to end the lines at the same level as the rectangular slot so the length of base and front remains the same.
+* The CAD model can be exported from the slicer software in 3MF file format.
 
 ---
 
