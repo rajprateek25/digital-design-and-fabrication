@@ -113,7 +113,7 @@ At this stage, I could see my design slowly taking shape. The design seemed quit
 
 ---
 
-### Solving the Nail Slot Puzzle
+### Solving the Nail-Slot Puzzle
 My design was almost at the finish line. Since I was designing the key-holder to be mounted on a wall, it was important include a nail-slot. I researched and found out that mostly nails used in household applications come with a nail-butt having `thickness=02 mm`. So, I creating the nail-slot at the backside of the key-holder and kept `thickness=04 mm` to keep the nail safely locked inside the material.
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
@@ -179,11 +179,11 @@ Here's how the CAD model of the wall-mounted key-holder I imagined, finally look
 
 ---
 
-To export the 3D Model, `Right-Click` > `Export` on the Part visible under Parts list in the left pane. Provide a custom file name, select format as _STEP_ and click `Export`. 
+To export the 3D Model, `Right-Click` > `Export` on the Part visible under Parts list in the left pane. Provide a custom file name, select format as STEP and click `Export`. 
 
 <div align="center">
 
-  |  Right Click on Part | Export STEP file | 
+  |  Right-Click on Part | Export STEP file | 
   | :---: | :---: |
   | <img src="media/export-1.png" height="600"> | <img src="media/export-2.png" height="600"> | '
 
@@ -196,7 +196,7 @@ After importing the Onshape project into the slicer software, I positioned the _
 
 <div align="center">
 
-  |  Import into Slicer | Print Orientation | Slice Plate | 
+  |  Importing into Slicer | Print Orientation | Slice Plate | 
   | :---: | :---: | :---: |
   | <img src="media/slicer-1.png" height="600"> | <img src="media/slicer-2.png" height="600"> | <img src="media/slicer-3.png" height="600"> |
   
@@ -209,7 +209,7 @@ The key-holder turned out just as I imagined, and designed. It was a fun experie
 
 <div align="center">
 
-  |  Supports | Finished Product | Nail Slot Test | Stress Test |  
+  |  Supports | Finished Product | Testing Nail-Slot | Stress-Test |  
   | :---: | :---: | :---: | :---: |
   | <img src="media/final-1.jpg" height="600"> | <img src="media/final-2.jpg" height="600"> | <img src="media/final-3.jpg" height="600"> | <img src="media/final-4.jpg" height="600"> | 
   
