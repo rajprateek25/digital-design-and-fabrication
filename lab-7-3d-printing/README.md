@@ -20,10 +20,6 @@ I decided to design a custom wall-mounted key-holder. The inspiration for this d
 
 ---
 
-## Computer Aided Designing (CAD) with Onshape
-
----
-
 ### Sketching the Basic Outline
 I kicked-off designing the key-holder by creating the first sketch to create a *schematic* matching the shape of a house.
 
@@ -50,6 +46,8 @@ After setting up the basic shape, I placed 5 equal sized circles having `diamete
 | :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 2 (Hangers) | Faces of Sketch 1 (Base) | Extrude 2 | Faces of Sketch 2 (Hangers) | Solid/Add | 20 mm |
 | Sketch 3 (hanger-lips) | Faces of Extrude 2 | Extrude 3 | Faces of Sketch 3 (Hanger Lips) | Solid/Add | 03 mm |
+
+---
 
 <div align="center">
 
@@ -168,7 +166,7 @@ The final addition to the design was to emboss our names at the front key-holder
 ---
 
 ### Finalising the Design
-Here is how the CAD model of the wall-mounted key-holder I imagined looked in Onshape
+Here's how the CAD model of the wall-mounted key-holder I imagined, finally looked in Onshape:
 
 <vidoe here>
 
