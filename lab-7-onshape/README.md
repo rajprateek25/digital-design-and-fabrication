@@ -24,28 +24,26 @@ I decided to design a custom wall-mounted key-holder. The inspiration for this d
 
 ---
 
-### Sketch 1 (base) and Extrude 1 / The Basic Outline
+### Sketching the Basic Outline
 I kicked-off designing the key-holder by creating the first sketch to create a *schematic* matching the shape of a house.
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
 | :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 1 (Base) | Right plane | Extrude 1 | Face of Sketch 1 (Base) | Solid/New | 10 mm |
 
-<div align="center">
-  <img src="media/sketch-1-base" height="600"> 
-</div>
+---
 
 <div align="center">
-  <img src="media/extrude-1" height="600"> 
-</div>
 
-<div align="center">
-  <img src="media/extrude-1-side" height="600"> 
+  |  Sketch 1 (Base) | Extrude 1 (View 1) | Extrude 1 (View 2) | 
+  | :---: | :---: | :---: |
+  | <img src="media/sketch-1-base.png" height="600"> | <img src="media/extrude-1.png" height="600"> | <img src="media/extrude-1-side.png" height="600"> |
+  
 </div>
 
 ---
 
-### Sketch 2 (hangers) and Extrude 2 / Hanger and Hanger Lips
+### Building the Hanger and Hanger-Lips
 After setting up the basic shape, I placed 5 equal sized circles having `diameter=06 mm`, placed at equal distance from each other and from the foundation line of the basic outline. These circles are where the material will extend to create key hangers. Then, I created 5 additional equal sized circles having `diameter=10 mm` and made them align concentrically to the hanger cirlces. Being slighltly larger in diameter, these circles after being extended will act as the hanger-lips which will prevent the keys from slipping off of the hangers.
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
@@ -54,32 +52,26 @@ After setting up the basic shape, I placed 5 equal sized circles having `diamete
 | Sketch 3 (hanger-lips) | Faces of Extrude 2 | Extrude 3 | Faces of Sketch 3 (Hanger Lips) | Solid/Add | 03 mm |
 
 <div align="center">
-  <img src="media/sketch-2-hangers" height="600"> 
-</div>
 
-<div align="center">
-  <img src="media/extrude-2" height="600"> 
-</div>
-
-<div align="center">
-  <img src="media/extrude-2-side" height="600"> 
-</div>
-
-<div align="center">
-  <img src="media/sketch-3-hanger-lips" height="600"> 
-</div>
-
-<div align="center">
-  <img src="media/extrude-3" height="600"> 
-</div>
-
-<div align="center">
-  <img src="media/extrude-3-side" height="600"> 
+  |  Sketch 2 (Hangers) | Extrude 2 (View 1) | Extrude 2 (View 2) | 
+  | :---: | :---: | :---: |
+  | <img src="media/sketch-2-hangers.png" height="600"> | <img src="media/extrude-2.png" height="600"> | <img src="media/extrude-2-side.png" height="600"> |
+  
 </div>
 
 ---
 
-### Hanger Fortification
+<div align="center">
+
+  |  Sketch 3 (Hanger Lips) | Extrude 3 (View 1) | Extrude 3 (View 2) | 
+  | :---: | :---: | :---: |
+  | <img src="media/sketch-3-hanger-lips.png" height="600"> | <img src="media/extrude-3.png" height="600"> | <img src="media/extrude-3-side.png" height="600"> |
+  
+</div>
+
+---
+
+### Fortifying Hangers using Fillets
 In order to introduce additonal strength in the design, I added fillets at the the inner edges of the hangers and hanger-lips.
 
 _Fillet 1_  and assigned it a `Radius=2 mm`.
@@ -88,46 +80,52 @@ _Fillet 1_  and assigned it a `Radius=2 mm`.
 | :--- | :--- | :--- | :--- | :--- | ---: | 
 | Fillet 1 | Edge | Edge of Extrude 2/3 | Radius | Distance | 02 mm |
 
-<div align="center">
-  <img src="media/fillet-1" height="600"> 
-</div>
+---
 
 <div align="center">
-  <img src="media/fillet-1-side" height="600"> 
+
+  |  Fillet (View 1) | Fillet (View 2) | 
+  | :---: | :---: |
+  | <img src="media/fillet-1.png" height="600"> | <img src="media/fillet-1-side.png" height="600"> | '
+
 </div>
 
 ---
 
-### Sketch 4 (Picture Slot) and Extrude 4 / Slot for Mug-Shot
+### Space to Paste a Mug-Shot
 At this stage, I could see my design slowly taking shape. The design seemed quite bland and suddenly an idea struck me! I decided to add circular picture-slot having `diameter=70 mm`, which can be used to place a desired picture after fabricaion, to give the product even more personalized look and feel.
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
 | :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 4 (Picture Slot) | Face of Extrude 1 | Extrude 4 | Face of Sketch 4 (Picture Slot) | Solid/Remove | 02 mm |
 
-<div align="center">
-  <img src="media/sketch-4-photoslot" height="600"> 
-</div>
+---
 
 <div align="center">
-  <img src="media/extrude-4" height="600"> 
+
+  |  Sketch 4 (Picture Slot) | Extrude 4 | 
+  | :---: | :---: |
+  | <img src="media/sketch-4-photoslot.png" height="600"> | <img src="media/extrude-4.png" height="600"> | '
+
 </div>
 
 ---
 
-### The Nail Slot Got Me / (Nail Slot Front) and Extrude 5
+### Solving the Nail Slot Puzzle
 My design was almost at the finish line. Since I was designing the key-holder to be mounted on a wall, it was important include a nail-slot. I researched and found out that mostly nails used in household applications come with a nail-butt having `thickness=02 mm`. So, I creating the nail-slot at the backside of the key-holder and kept `thickness=04 mm` to keep the nail safely locked inside the material.
 
 | Sketch Name | Sketch Plane | Extrude Name | Extrude Face | Extrude Type | Extrude Depth | 
 | :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 5 (Nail Slot) | Face of Extrude 1 | Extrude 5 | Faces of Sketch 5 (Nail Slot Front) | Solid/Remove | 04 mm |
 
-<div align="center">
-  <img src="media/sketch-5-nail-slot-front" height="600"> 
-</div>
+---
 
 <div align="center">
-  <img src="media/extrude-5" height="600"> 
+
+  |  Sketch 5 (Nail Slot Front) | Extrude 5 | 
+  | :---: | :---: |
+  | <img src="media/sketch-5-nail-slot-front.png" height="600"> | <img src="media/extrude-5.png" height="600"> | '
+
 </div>
 
 ---
@@ -138,12 +136,14 @@ As soon as Extrude 5 rendered the output, the realization dawned that the nail-s
 | :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 6 (Nail Slot Base) | Face of Extrude 5 | Extrude 6 | Faces of Sketch 6 (Nail Slot Base) | Solid/Remove | 2.5 mm |
 
-<div align="center">
-  <img src="media/sketch-6-nail-slot-back" height="600"> 
-</div>
+---
 
 <div align="center">
-  <img src="media/extrude-6" height="600"> 
+
+  |  Sketch 6 (Nail Slot Base) | Extrude 6 | 
+  | :---: | :---: |
+  | <img src="media/sketch-6-nail-slot-base.png" height="600"> | <img src="media/extrude-6.png" height="600"> | '
+
 </div>
 
 ---
@@ -155,12 +155,14 @@ The final addition to the design was to emboss our names at the front key-holder
 | :--- | :--- | :--- | :--- | :--- | ---: | 
 | Sketch 7 (Names) | Face of Sketch 4 (Picture Slot) | Extrude 7 | Faces of Sketch 7 (Names) | Solid/Add | 02 mm |
 
-<div align="center">
-  <img src="media/sketch-7-names" height="600"> 
-</div>
+---
 
 <div align="center">
-  <img src="media/extrude-7" height="600"> 
+
+  |  Sketch 7 (Name) | Extrude 7 | 
+  | :---: | :---: |
+  | <img src="media/sketch-7-name.png" height="600"> | <img src="media/extrude-7.png" height="600"> | '
+
 </div>
 
 ---
@@ -189,18 +191,11 @@ The key-holder looked just as I imagined and designed. It was a fun experience d
     * _Middle point constraint_ to align the vertical construction line to the middle of the foundation line.
     * _Vertical constraint_ for both the lines represeting the walls.
     * _Equal constraint_ for the lines representign slop[ping roof
-    * _Dimension constraint_ for the vertical and horizontal lines to lock their length.
-    * _Equal constraint_ to make all the circles and construction line segments identical in measurement.
-    * _Dimension constraint_ to lock the distance of circles from the founation line, the radius of the circles and the distance between the circles.
-    * _Equal constraint_ to make all the circles and construction line segments identical in measurement.
-    * _Dimension constraint_ to lock the distance of circles from the founation line, the radius of the circles and the distance between the circles.
-    * _Dimension constraint_ to lock the diameter of circles.
     * _Concentric constraint_
     * _Symmetric constraint_ to make the rectange aling symmetrically along the vertical construction line.
     * _Coincident constraint_ to make the circle and rectangle coincide at the center of the circle.
     * _Dimension constraint_ to lock the diameter of circle, dimensions of the rectange,a distance of the rectangle from the sloping roof.
     * _Tangent constraint_ to create lines for the base originating from the circle.
-    * _Vertical constraint_ to make the lines vertical.
     * _Coincident constraint_ to end the lines at the same level as the rectangular slot so the length of base and front remains the same.
 
 ---
