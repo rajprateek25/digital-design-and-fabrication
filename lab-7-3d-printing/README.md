@@ -13,7 +13,11 @@ The exercise seemed exciting. As the first step, I completed the 3 recommended t
 
 ---
 
-## Deciding the Product Design
+## 3D Modelling in Onshape
+
+---
+
+### Deciding the Product Design
 Althought the task brief mentioned "Smartphone accessories" as default theme, but we where given freedom to choose anything with a practice use.
 
 I decided to design a custom wall-mounted key-holder. The inspiration for this design came from a rather unpleasant incident that happened recently where my wife locked herself out of the apartment as we lack a designated spot for keys. By creating a custom wall-mounted key-holder instead of buying one, we can customise it to our liking and need, and prevent misplacing the keys in future.
@@ -168,14 +172,35 @@ The final addition to the design was to emboss our names at the front key-holder
 ### Finalising the Design
 Here's how the CAD model of the wall-mounted key-holder I imagined, finally looked in Onshape:
 
+---
 <div align="center">
   <video src= "https://github.com/user-attachments/assets/ff8d8902-4b0d-4dd3-bbf7-61ebe8593c45" controls autoplay muted loop style="max-width: 100%;"> </video> 
 </div>
 
 ---
 
-### Slicer Software
-Once I imported the Onshape porject into the slicer software, I chose the backside of the key-holder as the printing base for maximum strenth and enabled supports for hangers adn nail-slot.
+To export the 3D Model, `Right-Click` > `Export` on the Part visible under Parts list in the left pane. Provide a custom file name, select format as _STEP_ and click `Export`. 
+
+<div align="center">
+
+  |  Right Click on Part | Export STEP file | 
+  | :---: | :---: |
+  | <img src="media/export-1.png" height="600"> | <img src="media/export-2.png" height="600"> | '
+
+</div>
+
+---
+
+### Importing the Model in QIDI Studio (The Slicing Software)
+After importing the Onshape project into the slicer software, I positioned the _backside_ on the build plate - which was the flattest face of the design - to maximize adhesion. Additionally, for the hangers and th  nail-slot, I enabled tree-type supports. Lastly, I saved the project 3MF file and handed it over to the tutor for 3D printing.
+
+<div align="center">
+
+  |  Import into Slicer | Print Orientation | Slice Plate | 
+  | :---: | :---: | :---: |
+  | <img src="media/slicer-1.png" height="600"> | <img src="media/slicer-2.png" height="600"> | <img src="media/slicer-3.png" height="600"> |
+  
+</div>
 
 ---
 
