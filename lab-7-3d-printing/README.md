@@ -168,13 +168,21 @@ The final addition to the design was to emboss our names at the front key-holder
 ### Finalising the Design
 Here's how the CAD model of the wall-mounted key-holder I imagined, finally looked in Onshape:
 
-<vidoe here>
+<div align="center">
+  <video src= "https://github.com/user-attachments/assets/ff8d8902-4b0d-4dd3-bbf7-61ebe8593c45" controls autoplay muted loop style="max-width: 100%;"> </video> 
+</div>
+
+---
 
 ### Slicer Software
 Once I imported the Onshape porject into the slicer software, I chose the backside of the key-holder as the printing base for maximum strenth and enabled supports for hangers adn nail-slot.
 
+---
+
 ### Final Product
 The key-holder looked just as I imagined and designed. It was a fun experience designing and fabricating something of utility on my own.
+
+---
 
 ### Observations
 * Selecting the correct _Sketch Plane_ for every sketch is of utmost important.
